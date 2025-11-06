@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100dvh;
+    font-family: "Inter";
+}
+.cabecalho{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.cabecalho-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cabecalho h1{
+    color: white;
+}
+.cabecalho-topo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    list-style: none;
+    border-top: 1px solid #222;
+}
+.nav-menu ul{
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.active{
+    display: flex;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.container img{
+    border-radius: 10px;
+    width: 90%;
+}
+.container h2{
+    font-size: 32px;
+}
+@media screen and (min-width:850px) {
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-right: 10px;
+    }
+    #nav-btn{
+        display: none;
+    }
+    .container img{
+        width: 98vw;
+        height: 40vh;
+    }
+}
