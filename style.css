@@ -88,8 +88,35 @@ body{
     #nav-btn{
         display: none;
     }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "imagem h2"
+            "p      h2";
+        width: 90%; 
+        margin: 20px auto; 
+        align-items: start;
+        text-align: left;
+    }
+
     .container img{
-        width: 98vw;
-        height: 40vh;
+        grid-area: imagem;
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px;
+    }
+
+    .container h2{
+        grid-area: h2;
+        font-size: 32px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .container p{
+        grid-area: p;
+        text-align: center;
+        font-size: 20px;
     }
 }
